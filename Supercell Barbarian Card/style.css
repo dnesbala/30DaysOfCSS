@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 320px;
+  height: auto;
+  box-shadow: 4px 1px 4px 2px #72504a;
+  border-radius: 15px;
+}
+
+.card__image {
+  background-color: #8b6e64;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card__image img {
+  height: 440px;
+}
+
+.card__info {
+  background-color: #fff;
+  text-align: center;
+  padding: 2.2rem 1rem;
+}
+
+.card__info--level {
+  color: #e4a363;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.card__info h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.card__info--description {
+  color: #888;
+  line-height: 1.3rem;
+}
+
+.card__stats {
+  background-color: #ec9b3b;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card__stat {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.card__stat:not(:last-child) {
+  border-right: 1px solid #aaa;
+}
+
+.card__stat h4 {
+  font-size: 1.6rem;
+}
+
+.card__stat p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
